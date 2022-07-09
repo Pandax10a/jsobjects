@@ -7,4 +7,6 @@ let company = {
 
 if (company[`yearly_revenue`] >= 1000000) {
     console.log(`name: ${company[`names`]}, ceo: ${company[`ceo`]}}, number of employees: ${company[`number_of_employees`]}`);
+} else {
+    console.log(`try harder`);
 }
