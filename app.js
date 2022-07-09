@@ -3,7 +3,19 @@ let company = {
     yearly_revenue: 256890944,
     ceo: `ai`,
     number_of_employees: 9849,
-    managers: [`manager1`, `manager2`, `manager3`]
+    managers: [manager1 = {
+        name: `tom`,
+        salry: 333333,
+        is_senior: true
+    }, manager1 = {
+        name: `sue`,
+        salry: 222222,
+        is_senior: false
+    }, manager1 = {
+        name: `jerry`,
+        salry: 155555,
+        is_senior: true
+    }]
 }
 
 if (company[`yearly_revenue`] >= 1000000) {
