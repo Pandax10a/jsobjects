@@ -40,7 +40,7 @@ while (counter2 < company[`managers`].length) {
     console.log(company[`managers`][counter2][`name`]);
     console.log(company[`managers`][counter2][`salary`]);
     
-    console.log(`senior manager`);
+    console.log(`senior manager, u made it!!!`);
     } else {
         console.log(company[`managers`][counter2][`name`]);
         console.log(company[`managers`][counter2][`salary`]);
@@ -54,7 +54,7 @@ for (counter2 = 0; counter2 < company[`managers`].length; counter2++ ) {
         console.log(company[`managers`][counter2][`name`]);
         console.log(company[`managers`][counter2][`salary`]);
         
-        console.log(`senior manager`);
+        console.log(`senior manager, cheers!!`);
         } else {
             console.log(company[`managers`][counter2][`name`]);
             console.log(company[`managers`][counter2][`salary`]);
