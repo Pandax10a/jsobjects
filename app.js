@@ -5,15 +5,15 @@ let company = {
     number_of_employees: 9849,
     managers: [manager1 = {
         name: `tom`,
-        salry: 333333,
+        salary: 333333,
         is_senior: true
     }, manager2 = {
         name: `sue`,
-        salry: 222222,
+        salary: 222222,
         is_senior: false
     }, manager3 = {
         name: `jerry`,
-        salry: 155555,
+        salary: 155555,
         is_senior: true
     }]
 }
@@ -36,13 +36,28 @@ for (let counter = 0; counter < company[`managers`].length; counter++) {
 
 let counter2 = 0;
 while (counter2 < company[`managers`].length) {
-    if (company[`managers`][counter2][2]) {
-    console.log(company[`managers`][counter2][0]);
-    console.log(company[`managers`][counter2][1]);
-    console.log(company[`managers`][counter2][2]);
+    if ((company[`managers`][counter2][`is_senior`])) {
+    console.log(company[`managers`][counter2][`name`]);
+    console.log(company[`managers`][counter2][`salary`]);
+    
+    console.log(`senior manager`);
     } else {
-        console.log(company[`managers`][counter2][0]);
-        console.log(company[`managers`][counter2][1]);
+        console.log(company[`managers`][counter2][`name`]);
+        console.log(company[`managers`][counter2][`salary`]);
+        
     }
     counter2++;
+}
+
+for (counter2 = 0; counter2 < company[`managers`].length; counter2++ ) {
+    if ((company[`managers`][counter2][`is_senior`])) {
+        console.log(company[`managers`][counter2][`name`]);
+        console.log(company[`managers`][counter2][`salary`]);
+        
+        console.log(`senior manager`);
+        } else {
+            console.log(company[`managers`][counter2][`name`]);
+            console.log(company[`managers`][counter2][`salary`]);
+            
+        }
 }
