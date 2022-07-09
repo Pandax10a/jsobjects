@@ -17,3 +17,7 @@ while (counter < company[`managers`].length) {
     console.log(company[`managers`][counter]);
     counter++;
 }
+
+for (let counter = 0; counter < company[`managers`].length; counter++) {
+    console.log(company[`managers`][counter]);
+}
