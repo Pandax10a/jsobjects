@@ -7,11 +7,11 @@ let company = {
         name: `tom`,
         salry: 333333,
         is_senior: true
-    }, manager1 = {
+    }, manager2 = {
         name: `sue`,
         salry: 222222,
         is_senior: false
-    }, manager1 = {
+    }, manager3 = {
         name: `jerry`,
         salry: 155555,
         is_senior: true
@@ -32,4 +32,17 @@ while (counter < company[`managers`].length) {
 
 for (let counter = 0; counter < company[`managers`].length; counter++) {
     console.log(company[`managers`][counter]);
+}
+
+let counter2 = 0;
+while (counter2 < company[`managers`].length) {
+    if (company[`managers`][counter2][2]) {
+    console.log(company[`managers`][counter2][0]);
+    console.log(company[`managers`][counter2][1]);
+    console.log(company[`managers`][counter2][2]);
+    } else {
+        console.log(company[`managers`][counter2][0]);
+        console.log(company[`managers`][counter2][1]);
+    }
+    counter2++;
 }
